@@ -19,6 +19,7 @@ repositories {
     maven { url 'https://dl.bintray.com/kotlin/kotlin-js-wrappers' }
     maven { url 'https://dl.bintray.com/kotlinx/kotlinx' }
     maven { url "https://kotlin.bintray.com/kotlinx" }
+    maven { url "https://jitpack.io" }
     jcenter()
     mavenCentral()
 }
@@ -48,7 +49,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation kotlin('stdlib-common')
-
+                implementation "com.github.andylamax:asoft-theme:1.0.0"
                 implementation project(":asoft-module")
                 implementation project(":asoft-auth:asoft-auth-lib")
             }
